@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts-config>
+ <form-beans>  
+        <form-bean name="StrutsListaForm"  type="StrutsListaForm"/> 
+         <!-- Nombre en la url --> <!--  type = nombre de la clase que extiende del Form -->  
+    </form-beans>  
+      
+    <action-mappings>  
+        <action path="/AppPruebaStruts"  
+                type="StrutsListaAction"   
+                name="StrutsListaForm"  
+                input="/index.jsp">      
+            <forward name="success"        path="/AppListaStruts.jsp"/>  
+             <!-- Nombre de la url --> 
+                <!-- Nombre de la clase que hereda de action --> 
+        </action>  
+      </action-mappings>
+</struts-config>
